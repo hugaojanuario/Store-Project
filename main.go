@@ -1,11 +1,12 @@
 package main
 
 import (
-	"LojaDoHugo/routes"
 	"net/http"
+
+	"LojaDoHugo/routes"
 )
 
 func main() {
-	routes.CarregaRota()
-	http.ListenAndServe(":8080", nil)
+	routes.CarregaRotas()
+	http.ListenAndServe(":8000", nil)
 }
